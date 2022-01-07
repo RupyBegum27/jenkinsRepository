@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="United Health Care Test Suite">
+      <parameter name="browserName" value="chrome"/>
+    <parameter name="url" value="https://www.uhc.com/"/>
+
+
+        <!--    parallel="tests" Working Fine but have issue-->
+        <!--    parallel="none" Working Fine-->
+        <!--    parallel="classes" Working Fine-->
+        <parameter name="useCloudEnv" value="false"/>
+        <parameter name="cloudEnvName" value="browserStack"/>
+         <parameter name="os" value="windows"/>
+         <parameter name="osVersion" value="11"/>
+       <!-- <parameter name="os" value="OS X"/>-->
+        <!--<parameter name="osVersion" value="Big Sur"/>-->
+<!--        <parameter name="browserName" value="firefox"/>-->
+<!--        <parameter name="browserVersion" value="96"/>-->
+        <parameter name="url" value="https://www.uhc.com/"/>
+
+
+    <test name="Test Basics 1">
+
+        <classes>
+      <!--      <class name="com.United_HealthCare.testPage.HomePage_Test.HomePageTest"/>-->
+<!--            <class name="com.United_HealthCare.testPage.SignUpTestPage.SignUp_TestPage"/>-->
+      <!--      <class name="com.United_HealthCare.testPage.Covid19_Resources_Test.Covid19_TestPage"/>-->
+            <class name="com.United_HealthCare.testPage.Dental_Plans.DentalPage_Test"/>
+        </classes>
+
+    </test>
+
+
+
+</suite>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
